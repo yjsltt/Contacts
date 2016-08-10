@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#ffffff"/>
+    <corners android:radius="10px"/>
+    <padding android:bottom="3dip" android:left="3dip" android:right="3dip" android:top="3dip"/>
+</shape>
+    <!--为什么这儿就可以用px了，如果用dip会怎样-->
