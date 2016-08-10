@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="35dip"
+    android:background="@drawable/list_item_border"
+    android:descendantFocusability="blocksDescendants"
+    >
+    <!--拒绝ListItem中的子控件获得焦点,解决ListView中添加Button之后不响应事件-->
+
+
+    <!--用户头像-->
+    <ImageView
+        android:id="@+id/login_userPhoto"
+        android:layout_width="match_parent"
+        android:layout_weight="4.7"
+        android:layout_height="30dip"
+        android:background="@drawable/contact_1"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="5dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginBottom="5dip"
+        />
+
+    <TextView
+        android:id="@+id/login_user"
+        android:layout_width="match_parent"
+        android:layout_height="30dip"
+        android:layout_marginTop="5dip"
+        android:layout_weight="2"
+        android:layout_gravity="center_vertical"
+        android:text="1234567890"
+        android:textSize="7pt"
+        />
+<!--为什么要显示这串数-->
+    <ImageButton
+        android:id="@+id/login_deleteButton"
+        android:layout_width="match_parent"
+        android:layout_weight="5.8"
+        android:layout_height="14dip"
+        android:layout_marginTop="11dip"
+        android:layout_marginRight="3dip"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:background="@drawable/deletebutton"
+        />
+</LinearLayout>
