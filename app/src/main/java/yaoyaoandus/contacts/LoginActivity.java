@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -162,13 +163,14 @@ public class LoginActivity extends Activity{
      * @param
      * @return
      */
-    /*
+
     public boolean onTouchEvent(MotionEvent event)
     {
-        if (event.getAction()==MotionEvent.ACTION_DOWN()&&isVisible){
+        if (event.getAction()==MotionEvent.ACTION_UP)
+        {
                 int[] location=new int[2];
 
-            location.getLocationInWindow(location);
+            loginList.getLocationInWindow(location);
             int x=(int)event.getX();
             int y=(int)event.getY();
             if(x<location[0]||x>location[0]+loginList.getWidth()||y<location[1]||y>location[1]+
@@ -180,8 +182,9 @@ public class LoginActivity extends Activity{
                 loginList.setVisibility(View.GONE);
             }
         }
-        return super.onTouchEvent(event);
-    }*/
+        return true;
+    }
+
     public class MyLoginListAdapter extends BaseAdapter{
         protected Context context;
         protected ArrayList<HashMap<String,Object>> list;
