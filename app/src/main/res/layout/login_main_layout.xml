@@ -43,12 +43,10 @@
         android:layout_marginRight="30dip"
         android:layout_marginTop="15dip"
         android:paddingLeft="50dip"
-        android:hint="用户名/邮箱/手机号"
+        android:hint="@string/ac_number"
         android:layout_below="@id/myImage"
-        android:inputType="number"
+        android:inputType="text"
         android:background="@drawable/login_num_edit" />
-    <!--android:background="@drawable/qqnum_edit"-->
-    <!--这个qqnum_edit是什么 图片编辑器？-->
     <!--输入框-->
     <TextView
         android:layout_width="wrap_content"
@@ -68,7 +66,8 @@
         android:paddingLeft="50dip"
         android:layout_marginLeft="40dip"
         android:layout_marginRight="30dip"
-        android:hint="密码"
+        android:hint="@string/ac_password"
+        android:inputType="textPassword"
         android:layout_below="@+id/loginNum"
         android:background="@drawable/login_num_edit"
         />
@@ -114,7 +113,7 @@
         android:layout_marginTop="44dp"
         android:layout_marginLeft="-15dp"
         android:background="@drawable/login_button_back"
-        android:text="登陆"
+        android:text="@string/login"
         android:textColor="@android:color/white"
         android:layout_below="@+id/loginPassword"
         android:layout_alignStart="@+id/loginPassword" />
@@ -128,7 +127,7 @@
         android:layout_alignParentLeft="true"
         android:layout_below="@id/LoginButton"
         android:layout_marginLeft="45dip"
-        android:text="找回密码"
+        android:text="@string/find_password"
         android:textSize="7pt"
         android:textColor="#333355"
         android:gravity="bottom"
@@ -143,7 +142,7 @@
         android:layout_alignParentRight="true"
         android:layout_marginRight="45dip"
         android:layout_marginTop="5dip"
-        android:text="注册账号"
+        android:text="@string/sign_up"
         android:textSize="7pt"
         android:textColor="#333355"
         android:gravity="bottom"
